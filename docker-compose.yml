@@ -1,9 +1,7 @@
 version: '3.7'
 services:
   django:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+    image: ihebkraiem/college-erp-master:tagname
     container_name: college_app
     ports:
-      - 8001:8000
+      - "8001:8000"
