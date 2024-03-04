@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   django:
-    image: ihebkraiem/college-erp-master:tagname
+    image: ihebkraiem/college-erp-master:latest
     container_name: college_app
     ports:
       - "8001:8000"
