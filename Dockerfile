@@ -14,12 +14,11 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1  
 
 # install dependencies  
-RUN pip install --no-cache-dir  --upgrade pip  
-
+RUN pip install --no-cache-dir --upgrade pip  
 # copy whole project to your docker home directory. 
 COPY . $DockerHOME  
 # run this command to install all dependencies  
-RUN pip install --no-cache-dir -r requirements.txt --user
+RUN pip install --no-cache-dir --requirement requirements.txt --user
 # port where the Django app runs  
 EXPOSE 8000  
 # start server  
